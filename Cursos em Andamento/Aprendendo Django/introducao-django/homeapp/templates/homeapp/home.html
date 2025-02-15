@@ -1,7 +1,19 @@
 {% extends "global/base.html" %}
 
-{% block texto %}Herança, depois de 3 dias acho que entendi
+{% block texto %}
+<br>
+<h1>Pagina inicial</h1>
+<hr>
+<p>
+        Pagina iniciada - gerada atraves
+    de uma view na pasta de app homeapp <br><br>
+    o codigo fonte se encontra na pasta template, que basicamente define o estilo e a visualização do conteudo da pagina principal.
+    <br><br>
+    Tambem foi usado a função render para renderizar o html criado no arquivo views.py do django, um pouco confuso, ainda mais tendo consciencia de que não sei html em si, porém está sendo uma experiencia divertida e proveitosa.
+    <br><br>
+    Houve tambem o uso de herança, na qual estamos extendo o arquivo base.html, usando a ideia de template global, pelo observado essa tecnica permite agilizar o desenvolvimentoe a produção, evitando repetições de codigo.
+    <br><br>
+    Estamos usando o plugin do django no vscode, usando a ideia de block. Esse arquivo esta dentro de um block que esta entre {} dentro arquivo home. 
+</p>
 
-{{ texto_contexto|linebreaks }}
-
-Base com plugin django html entendendo o block{% endblock texto %}
+{% endblock texto %}
