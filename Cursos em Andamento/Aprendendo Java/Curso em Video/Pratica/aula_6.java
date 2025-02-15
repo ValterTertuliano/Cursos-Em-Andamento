@@ -4,7 +4,7 @@ public class aula_6 {
         
         // Maneira mais simples de declarar variáveis
         int idade = 3;
-        float sal = 1830.54f;
+        float sal = 1830.54f; 
         char letra = 'g'; // aceita apenas uma letra
         boolean casado = false;
         
@@ -22,5 +22,7 @@ public class aula_6 {
 
         // Corrigindo o formato da saída
         System.out.printf("Sua idade é %d", idade);
+
+        
     }
 }

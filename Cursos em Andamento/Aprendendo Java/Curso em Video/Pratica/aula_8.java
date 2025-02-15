@@ -23,6 +23,6 @@ public class aula_8 {
         String vota = ((idade >= 16 && idade<18) || (idade > 70))?"é opcional":"Não é opcional"; 
          System.out.println("Seu Voto: " + vota);
 
-
+        scanner.close();
     }
 }

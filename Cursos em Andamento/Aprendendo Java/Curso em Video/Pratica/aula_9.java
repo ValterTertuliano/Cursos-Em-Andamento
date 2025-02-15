@@ -19,6 +19,6 @@ public class aula_9 {
             System.out.println("A média é " + total + " Você está Aprovado");
             
         }
-
+        scanner.close();
     }
 }
