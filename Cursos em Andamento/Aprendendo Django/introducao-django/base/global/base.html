@@ -3,29 +3,18 @@
 
 <body>
 
+    
     <h1> esta sendo usado o conceito de partials para evitar repetição de codigo, usando include para incluir um cabeçalho geral para todas as paginas
     </h1>
     <h1>
         Esse é um exemplo de template global
         dentro da pasta base 
     </h1>
-    <h2>{% block texto %}Base com plugin django html entendendo o block{% endblock texto %}</h2>
-    <br>
-    <hr>
-    <br>
-    <h1>
-        Agora vamos fazer um partial postblock usando include.
-    </h1>
-    <p>São posts dentro de uma pagina, podemos imaginar um blog, por isso são postblock, porque são blocos de post</p>
-    <article class="post">
-        <header>
-            <h2 class="post__title">
-            Lorem ipsum dolor sit amet.
-            </h2>
-        </header>
-        <div class="post__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit saepe vitae culpa fugit dolor ipsam labore, nobis voluptatum vero exercitationem!
-        </div>
-    </article>
+    <h3>{% block texto %}Base com plugin django html entendendo o block{% endblock texto %}</h3>
+    <br><hr>
+
+    <!-- adicionando um bloco de post -->
+
+    {% include "global/partial/postblock.html" %}
 </body>
 </html>
