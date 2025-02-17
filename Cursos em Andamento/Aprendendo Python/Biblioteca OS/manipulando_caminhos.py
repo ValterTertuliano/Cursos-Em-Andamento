@@ -44,10 +44,12 @@ os.remove(caminho_absoluto)
 
 # uma boa pratica é checar a existencia do arquivo antes de qualquer manipulação
 # no caso atual vamos apenas checar se ele foi apagado
-print('-'*30)
+print("-" * 30)
 print("\nVerificando existencia de arquivos/diretorios\n")
 apagado = not os.path.exists(caminho_absoluto)
-if apagado: print(f"Arquivo {nome_caminho_relativo} apagado com sucesso.")
-else: print("Arquivo não foi apagado.")
+if apagado:
+    print(f"Arquivo {nome_caminho_relativo} apagado com sucesso.")
+else:
+    print("Arquivo não foi apagado.")
 print()
-print('-'*30)
+print("-" * 30)
