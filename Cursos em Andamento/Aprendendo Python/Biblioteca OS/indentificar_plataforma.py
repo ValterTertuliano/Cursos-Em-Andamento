@@ -29,6 +29,7 @@ def indentificar_detalhes_plataforma() -> None:
     print(f"Versão: {detalhes.version}")
     print(f"Release: {detalhes.release}")
     print(f"Arquitetura: {detalhes.machine}")
+    print(f"Processador: {detalhes.processor}")
 
 
 if __name__ == "__main__":

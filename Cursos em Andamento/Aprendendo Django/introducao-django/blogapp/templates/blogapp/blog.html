@@ -1,9 +1,22 @@
 {% extends "global/base.html" %}
 
-{% block texto %}<h1>Extendendo o tema do template global para o app blog</h1><br> vale lembrar que devo usar o mesmo nome para real extensão Texto - está começando a fazer sentido, já que basicamente os templates são como temas para uma app
-<br><br><hr>
-{% endblock texto %}
+{% block texto %}
+<h4>
+    <br>
+    Pagina do blog
+</h4>
+   <p>Rota criada para blog, podemos criar blocos de post, tem um bloco de post definido na pasta base -> global/partial/postblock.html na qual tem definido um post padrão diretamente em uma pasta de uso global, ou poderia fixar o post diretamente no app bloghome <br> </p>
+   <p></p>
+{% endblock texto %} 
 
 {% block posts %}
+<p> 
+    <br> Estou importando o post usando "include" fornecido pelo django, dentro do arquivo blog.html 
+</p>
+
+{% include "global/partial/postblock.html" %}
+
+<p><br>Podemos adicionar quantos post der vontade <br></p>
+
 {% include "global/partial/postblock.html" %}
 {% endblock posts %}
