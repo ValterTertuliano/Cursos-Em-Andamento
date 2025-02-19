@@ -1,0 +1,101 @@
+Grade Curricular - Curso Técnico em Desenvolvimento de Sistemas (1200 horas)
+
+Módulo 1 - Fundamentos da Computação e Lógica de Programação (160 horas)
+
+Introdução à Computação e Sistemas Operacionais
+
+Lógica de Programação e Algoritmos
+
+Introdução à Programação Estruturada
+
+Ferramentas de Controle de Versão (Git/GitHub)
+
+Módulo 2 - Estruturas de Dados e Algoritmos (160 horas)
+
+Tipos de Dados e Estruturas de Controle
+
+Listas, Pilhas e Filas
+
+Algoritmos de Ordenação e Busca
+
+Programação Orientada a Objetos (POO)
+
+Módulo 3 - Banco de Dados (SQL e NoSQL) (160 horas)
+
+Modelagem de Banco de Dados Relacional
+
+Linguagem SQL (MySQL/PostgreSQL)
+
+Introdução a Banco de Dados NoSQL (MongoDB/Firebase)
+
+Otimização e Segurança de Dados
+
+Módulo 4 - Engenharia de Software e Metodologias Ágeis (120 horas)
+
+Princípios de Engenharia de Software
+
+Metodologias Ágeis (Scrum/Kanban)
+
+Versionamento e Colaboração em Projetos
+
+Documentação e Qualidade de Código
+
+Módulo 5 - Desenvolvimento Web e Mobile (200 horas)
+
+Desenvolvimento Web Frontend (HTML, CSS, JavaScript)
+
+Frameworks Frontend (React, Vue ou Angular)
+
+Desenvolvimento Backend (Node.js, Django ou Spring Boot)
+
+Introdução ao Desenvolvimento Mobile (React Native ou Flutter)
+
+Módulo 6 - Arquitetura de Software e Padrões de Projeto (120 horas)
+
+Princípios de Arquitetura de Software
+
+Padrões de Projeto (MVC, Singleton, Factory, Observer)
+
+Microsserviços e Arquitetura em Nuvem
+
+Boas Práticas de Desenvolvimento
+
+Módulo 7 - Segurança da Informação (80 horas)
+
+Princípios de Segurança da Informação
+
+Desenvolvimento Seguro e Testes de Segurança
+
+Criptografia e Proteção de Dados
+
+Ethical Hacking e Análise de Vulnerabilidades
+
+Módulo 8 - DevOps e Infraestrutura (100 horas)
+
+Introdução ao DevOps
+
+Integração Contínua e Entrega Contínua (CI/CD)
+
+Containers e Orquestração (Docker e Kubernetes)
+
+Monitoramento e Gerenciamento de Servidores
+
+Módulo 9 - Soft Skills e Empreendedorismo em Tecnologia (80 horas)
+
+Comunicação e Trabalho em Equipe
+
+Inteligência Emocional e Resolução de Problemas
+
+Introdução ao Empreendedorismo em TI
+
+Gestão de Carreira e Networking
+
+Módulo 10 - Projetos Práticos e Portfólio (120 horas)
+
+Desenvolvimento de Projetos Individuais e em Grupo
+
+Aplicação Prática dos Conceitos Aprendidos
+
+Elaboração de Portfólio Profissional
+
+Apresentação e Feedback dos Projetos
