@@ -9,6 +9,7 @@
    <p></p>
 {% endblock texto %} 
 
+
 {% block posts %}
 <p> 
     <br> Estou importando o post usando "include" fornecido pelo django, dentro do arquivo blog.html 
@@ -19,4 +20,11 @@
 <p><br>Podemos adicionar quantos post der vontade <br></p>
 
 {% include "global/partial/postblock.html" %}
+
+<p>
+    Podemos usar loops no django
+</p>
+{% for post in post %}
+{% include "global/partial/postblock.html" %}
+{% endfor %}
 {% endblock posts %}
