@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # incluindo o aplicativo no projeto
+    # precisamos adicionar uma referencia
+    # a sua classe de configuração - inicio/apps.py
+    'inicio.apps.InicioConfig'
 ]
 
 MIDDLEWARE = [
@@ -103,13 +107,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "pt-br"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/Sao_Paulo" # mudando fuso horario para são paulo
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = True # garantindo o fuso horario definido anteriormente
 
 
 # Static files (CSS, JavaScript, Images)
