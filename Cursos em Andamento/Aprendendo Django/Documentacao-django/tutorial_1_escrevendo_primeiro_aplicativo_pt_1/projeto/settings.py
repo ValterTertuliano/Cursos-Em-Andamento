@@ -52,7 +52,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
-
+# modulo URLConfig - modulo raiz
 ROOT_URLCONF = "projeto.urls"
 
 TEMPLATES = [
