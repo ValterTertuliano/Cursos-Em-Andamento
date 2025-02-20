@@ -1,0 +1,15 @@
+<h1>Minha view seguindo a documentação</h1>
+<p>O objetivo do tutorial da documentação oficial é ensinar como o django funciona e seus principais conceitos, atraves da geração de um site de enquete</p>
+<h3>Aqui temos uma lista das 5 perguntas mais recentes gerada por models</h3>
+
+<p>
+{% if lista_de_perguntas %}
+    <ul>
+    {% for pergunta in lista_de_perguntas %}
+        <li><a href="{{ pergunta.id }}/">{{ pergunta.texto_pergunta }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Modulo inicio não está disponivel.</p>
+{% endif %}
+</p>

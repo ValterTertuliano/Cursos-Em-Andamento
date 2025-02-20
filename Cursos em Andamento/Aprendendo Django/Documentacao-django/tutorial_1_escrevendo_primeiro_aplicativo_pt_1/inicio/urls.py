@@ -4,7 +4,7 @@
 # 1. O padrão de URL (em formato de string);
 # 2. A view que será executada quando essa URL for acessada;
 # 3. O nome da URL, que pode ser usado para referenciar a URL em templates ou no código.
-from django.urls import path # type: ignore
+from django.urls import path  # type: ignore
 
 # Importação da variável 'views' do módulo 'inicio'
 # A variável 'views' se refere ao arquivo 'views.py' dentro do aplicativo 'inicio'.
@@ -24,6 +24,9 @@ urlpatterns = [
     # Isso facilita referenciar essa URL em outras partes do código, como em templates
     # ou redirecionamentos.
     path("", views.index, name="index"),
+    path("<int:pergunta_id>/", views.detalhes, name="detalhes"),
+    path("<int:pergunta_id>/resultados", views.resultados, name="resultados"),
+    path("<int:pergunta_id>/votos", views.votos, name="votos"),
 ]
 
 # Isso garante que, quando um usuário acessar a raiz do site (por exemplo, 'www.seusite.com/'),

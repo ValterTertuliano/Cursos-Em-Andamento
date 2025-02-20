@@ -4,7 +4,8 @@ Configuração de URLs para o projeto 'projeto'.
 A lista `urlpatterns` mapeia URLs para views. Para mais informações, consulte:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
 
-Exemplos:
+Exemplos:3
+
 Views baseadas em função:
     1. Adicione uma importação:  from my_app import views
     2. Adicione uma URL à lista de urlpatterns:  path('', views.home, name='home')
@@ -22,13 +23,13 @@ Incluindo outra configuração de URLs:
 # O 'admin' é o módulo que permite a criação de uma interface administrativa
 # para gerenciar o conteúdo do site. O caminho 'admin.site.urls' é o que permite
 # que a interface de administração esteja acessível.
-from django.contrib import admin
+from django.contrib import admin  # type: ignore
 
 # Importação das funções 'path' e 'include' de 'django.urls'
 # O 'path' é utilizado para definir rotas de URL para views, enquanto o 'include'
 # é usado para incluir outros arquivos de configuração de URLs (por exemplo,
 # as URLs de um aplicativo específico).
-from django.urls import path, include
+from django.urls import path, include  # type: ignore
 
 # A lista 'urlpatterns' é onde todas as URLs do projeto são mapeadas para as views.
 # Essa lista será usada pelo Django para verificar se a URL solicitada pelo usuário

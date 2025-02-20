@@ -1,4 +1,4 @@
-from django.contrib import admin # type: ignore
+from django.contrib import admin  # type: ignore
 
 # Register your models here.
 from inicio.models import Pergunta
