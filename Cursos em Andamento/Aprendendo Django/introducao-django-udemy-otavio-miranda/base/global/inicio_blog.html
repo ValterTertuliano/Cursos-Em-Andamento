@@ -1,0 +1,28 @@
+{% include "global/partial/head.html" %}
+
+<h1>Pagina inicial do blog</h1>
+<hr>
+<p>Nessa pagina estamos usando apenas para mapeamento o menu abaixo, ele vai te levar para as rotas programadas para o curso de django da UDEMY. <br></p>
+
+{% include "global/partial/menu.html" %}
+
+<br>
+<h3>A pagina e suas alterações durante o desenvolvimento das aulas.</h3>
+<p> Nesse momento estamos na aula 438 do curso python, na seção de django, com o professor Otavio Miranda.</p>
+<p>Onde estamos estudando blocos de post, onde inclui iterações com loop for em django.</p><br>
+<h3>Usando templates em nivel global</h3>
+<p>Estamos criando uma aplicação base para reutilização de codigo, é uma maneira de não ter que escrever as mesmas coisas varias vezes para cada pagina que precisar criar dentro do site</p>
+<p>dentro da pasta base temos uma outra chamada global, onde guardamos os arquivos base do projeto.</p>
+<p>Na pasta global, podemos adicionar cabeçalhos, menus e etc. dividida em partes, o que facilita e muito a organização geral da estrutura da pagina e de arquivos, além de que por exemplo, podemos usar um design para uma pagina inicial, uma pagina de blog ou qualquer outra coisa, e reciclar essas mesmas partes para criação de novas paginas</p><br>
+<h3>Exemplo do blog</h3>
+<p>Queremos que a pagina do blog, seja um pouco diferente da pagina inicial.</p>
+<p>podemos criar um arquivo html para definir a estrutura base do html para o blog, e ao precisar extender as rotas dentro do blog, podemos usar esse mesmo arquivo incluindo ele diretamente no html da nova pagina</p><br>
+<h2>Observe:</h2>
+<p>nesse projeto criei dentro da pasta base/global um arquivo chamado inicio_blog.html, que é onde está o texto atual, vamos usar a mesma parte de cabeçalho do arquivo head ( como sabemos que se trata de pequenas partes, é bom criar uma pasta dentro de globals com o nome partial para melhor organização, e como escrito na propria documentação, isso é para nossa sanidade rsrsr.)</p>
+<p>Feito isso podemos afirmar que o arquivo de cabeçalho esta no seguinte caminho base/global/partial/head.html</p>
+<p>Agora podemos incluir esse mesmo cabeçalho para todas as paginas sem ter ficar escrevendo ele o tempo todo usando o metodo <b>include</b>.</p><br>
+<h3>Sintaxe</h3>
+<p>com o django html selecionado como linguagem basta apenas digitar include, e vai aparecer isso na linha. <br>
+<b>{ % include "caminho/que/vai/ser/incluido" % }</b>
+</p>
+<p>Isso é muito parecido com a ideia de herança, onde a nova pagina vai carregar o conteudo que está sendo incluido na pagina</p><br>

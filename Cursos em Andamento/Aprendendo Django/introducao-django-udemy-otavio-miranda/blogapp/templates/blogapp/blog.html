@@ -1,30 +1,10 @@
-{% extends "global/base.html" %}
-
-{% block texto %}
-<h4>
-    <br>
-    Pagina do blog
-</h4>
-   <p>Rota criada para blog, podemos criar blocos de post, tem um bloco de post definido na pasta base -> global/partial/postblock.html na qual tem definido um post padrão diretamente em uma pasta de uso global, ou poderia fixar o post diretamente no app bloghome <br> </p>
-   <p></p>
-{% endblock texto %} 
-
+{% include "global/inicio_blog.html" %}
+<h3> Usando context </h3>
+<p> Podemos criar contextos dentro da função render </p><br>
+<p>{% block texto %} {{ text }} {% endblock texto %}</p><br>
 
 {% block posts %}
-<p> 
-    <br> Estou importando o post usando "include" fornecido pelo django, dentro do arquivo blog.html 
-</p>
-
-{% include "global/partial/postblock.html" %}
-
-<p><br>Podemos adicionar quantos post der vontade <br></p>
-
-{% include "global/partial/postblock.html" %}
-
-<p>
-    Podemos usar loops no django
-</p>
-{% for post in post %}
-{% include "global/partial/postblock.html" %}
-{% endfor %}
+  {% for post in posts %}
+    {% include 'global/partial/postblock.html' %}
+  {% endfor %}
 {% endblock posts %}
