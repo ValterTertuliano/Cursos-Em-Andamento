@@ -5,14 +5,11 @@ from django.shortcuts import render
 
 # isso é uma view para a pagina inicial
 def home(request):
-    print(
-        "Pagina inicial - mudei para pasta homeapp - url aninhada - mudando http para render para renderizar html",
-        "home.html",
-    )
+    contexto = {
+        'title': "Pagina Inicial"
+    }
     return render(
         request,
         "homeapp/home.html",
-        {
-            "texto_contexto": "\n isso é um context dentro do render uma ideia para receber dados"
-        },
+        contexto,
     )
