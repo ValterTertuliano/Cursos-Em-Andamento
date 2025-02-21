@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>mark{background-color: aqua};</style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito para destaque</h2>
+    <p>Nesta frase temos um termo em <b>negrito</b> usando a tag &lt;b&gt; (não semântica)</p>
+
+    <p>Podemos usar a tag &lt;<strong>strong</strong>&gt; para destacar em <strong>negrito.</strong></p>
+
+    <h2>Itálico para dar ênfase</h2>
+    <p>Nesta frase temos um termo em <i>itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
+    
+    <p>Podemos usar a tag &lt;<em>em</em>&gt; para dar ênfase com <em>itálico.</em></p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar texto marcado usando a tag <mark>&lt;mark&gt;</mark></p>
+    <p>Dentro do HTML não podemos mudar a cor diretamente, precisamos do CSS.</p>
+    <p>O que podemos fazer é adicionar um parâmetro dentro da tag, chamado style. Dentro desse parâmetro, já podemos considerar o CSS <mark style="background-color: lime;">&lt;mark style='background-color: nomeDaCor;'&gt;</mark></p>
+    <p>Também devemos lembrar que adicionar o parâmetro style dentro da tag modifica apenas o que está dentro da tag, e não as outras -> <mark>observe que a marca está igual à primeira.</mark></p>
+    <h4>Podemos resolver isso.</h4>
+    <p>Dentro de head podemos criar uma tag &lt;style&gt; e criamos um seletor para mark, mudando a cor de todas as marcas dentro do HTML em que está escrito.</p>
+    <p>Observe que a única marca que não se modifica para a cor aqua foi a tag com o <mark>parâmetro adicionado manualmente</mark></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. Usamos a tag &lt;big&gt; e a &lt;small&gt;, observe que a tag &lt;big&gt; está obsoleta, enquanto a tag &lt;small&gt; continua em uso.</p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o sublinhado com a tag &lt;u&gt; <u>(não semântica)</u>.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Usamos a tag &lt;sup&gt; para coisas como x10+3. Com essa tag podemos colocar esse tipo de equação de forma adequada, por exemplo: <mark>x<sup>10</sup>+3</mark></p>
+
+    <h2>Texto subscrito</h2>
+    <p>Da mesma forma, podemos usar a tag &lt;sub&gt; para coisas como H2O, que é o oposto da tag &lt;sup&gt;, deixando esse tipo de fórmula mais adequada ao seu contexto, por exemplo: <mark>H<sub>2</sub>O</mark></p>
+</body>
+</html>
